@@ -14,7 +14,12 @@ const inputCls =
 
 export function Contact() {
   const { contact, location, branches } = siteConfig;
+  type Branch = (typeof branches)[number];
   const [sent, setSent] = useState(false);
+  const [selectedBranchId, setSelectedBranchId] = useState<string>("naga");
+
+  const activeBranch: Branch = branches.find((b: Branch) => b.id === selectedBranchId) ?? branches[0];
+  const activeLabel = activeBranch.label;
 
   // Tier 1: frontend-only. Opens the user's email app with the message prefilled.
   // Future: replace with a server action / API route / CRM webhook.
@@ -121,29 +126,54 @@ export function Contact() {
         </div>
 
         <div className="mt-10 overflow-hidden rounded-3xl border border-line bg-white shadow-card">
-          <div className="flex flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-4 border-b border-line p-5 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-start gap-3">
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-light text-accent-dark">
                 <Icon name="mapPin" size={22} />
               </span>
               <div>
-                <p className="font-extrabold text-brand-dark">Find us on the map</p>
-                <p className="text-sm text-muted">{siteConfig.map.label}</p>
+                <p className="font-extrabold text-brand-dark">Visit our branches</p>
+                <p className="text-sm text-muted">{activeLabel}</p>
               </div>
             </div>
-            <Button href={siteConfig.map.directionsUrl} external variant="secondary" icon="mapPin">
-              Get Directions
-            </Button>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="flex rounded-full bg-surface p-1 border border-line">
+                {branches.map((b) => (
+                  <button
+                    key={b.id}
+                    type="button"
+                    onClick={() => setSelectedBranchId(b.id)}
+                    className={`rounded-full px-4 py-1.5 text-xs font-bold transition-all ${
+                      selectedBranchId === b.id
+                        ? "bg-brand text-white shadow-sm"
+                        : "text-muted hover:text-brand"
+                    }`}
+                  >
+                    {b.name.replace(" (Main)", "")}
+                  </button>
+                ))}
+              </div>
+
+              {activeBranch && (
+                <Button href={activeBranch.directionsUrl} external variant="secondary" icon="mapPin" className="!min-h-10 !px-4 !text-xs">
+                  Get Directions
+                </Button>
+              )}
+            </div>
           </div>
           <div className="aspect-[4/3] w-full sm:aspect-[21/9]">
-            <iframe
-              title={`Map of ${siteConfig.name} location`}
-              src={siteConfig.map.embedUrl}
-              className="h-full w-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
+            {activeBranch && (
+              <iframe
+                key={activeBranch.id}
+                title={`Map of ${activeBranch.name} location`}
+                src={activeBranch.embedUrl}
+                className="h-full w-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            )}
           </div>
         </div>
       </Section>
