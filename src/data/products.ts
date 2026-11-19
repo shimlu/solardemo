@@ -21,8 +21,8 @@ export const productCategories: { id: "all" | ProductCategory; label: string }[]
   { id: "commercial", label: "Commercial / Systems" },
 ];
 
-// [PLACEHOLDER] All product names/specs below are realistic samples.
-// Replace with the actual catalog from the client.
+// [PLACEHOLDER] All product names/specs and sample photos below are realistic samples.
+// Replace with the actual catalog and product photos from the client.
 export const products: Product[] = [
   {
     id: "home-ceiling-light",
@@ -30,6 +30,7 @@ export const products: Product[] = [
     category: "home",
     summary: "Bright indoor lighting powered by the sun — no electric bill.",
     specs: ["Remote controlled", "Panel + LED set", "Ideal for sala & rooms"],
+    image: "/products/home-ceiling-light.jpg",
     badge: "Popular",
     isPlaceholder: true,
   },
@@ -39,6 +40,7 @@ export const products: Product[] = [
     category: "home",
     summary: "Auto on at dusk, off at dawn. Perfect for gates and yards.",
     specs: ["Dusk-to-dawn sensor", "Weather-resistant", "Easy mount"],
+    image: "/products/home-garden-light.jpg",
     isPlaceholder: true,
   },
   {
@@ -47,6 +49,7 @@ export const products: Product[] = [
     category: "home",
     summary: "Motion-activated security lighting for walls and pathways.",
     specs: ["PIR motion sensor", "3 lighting modes", "Rain-ready"],
+    image: "/products/home-wall-light.jpg",
     isPlaceholder: true,
   },
   {
@@ -55,6 +58,7 @@ export const products: Product[] = [
     category: "street",
     summary: "Integrated panel, battery and LED — fast install, minimal upkeep.",
     specs: ["Auto dusk-to-dawn", "High-lumen LED", "Pole-mount ready"],
+    image: "/products/street-light-allinone.jpg",
     badge: "LGU Ready",
     isPlaceholder: true,
   },
@@ -64,6 +68,7 @@ export const products: Product[] = [
     category: "street",
     summary: "Wide-beam outdoor lighting for yards, courts and parking.",
     specs: ["Remote control", "Waterproof housing", "Multiple wattages"],
+    image: "/products/street-flood-light.jpg",
     isPlaceholder: true,
   },
   {
@@ -72,6 +77,7 @@ export const products: Product[] = [
     category: "street",
     summary: "Separate panel and lamp for roads, barangays and subdivisions.",
     specs: ["Larger battery capacity", "Long night runtime", "Durable alloy body"],
+    image: "/products/street-split-light.jpg",
     isPlaceholder: true,
   },
   {
@@ -80,6 +86,7 @@ export const products: Product[] = [
     category: "commercial",
     summary: "Multi-light solar kits sized for shops, farms and small businesses.",
     specs: ["Scalable setup", "Panel + battery + controller", "Custom quote"],
+    image: "/products/commercial-system.jpg",
     isPlaceholder: true,
   },
   {
@@ -88,8 +95,8 @@ export const products: Product[] = [
     category: "commercial",
     summary: "High-output lighting for builders, contractors and community projects.",
     specs: ["Bulk supply", "Project-based pricing", "Installation guidance"],
+    image: "/products/commercial-highmast.jpg",
     badge: "Bulk Orders",
     isPlaceholder: true,
   },
 ];
-

@@ -51,7 +51,7 @@ export function Products() {
               exit={{ opacity: 0, scale: 0.97 }}
               transition={{ duration: 0.25 }}
               whileHover={{ y: -4 }}
-              className="flex flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-card transition-shadow hover:shadow-lift"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-card transition-shadow hover:shadow-lift"
             >
               <ProductVisual product={p} />
               <div className="flex flex-1 flex-col p-5">
