@@ -92,6 +92,65 @@ export const whyUs: { id: string; title: string; description: string; icon: Icon
   },
 ];
 
+export interface Testimonial {
+  id: string;
+  quote: string;
+  author: string;
+  product: string;
+  highlight: string;
+}
+
+export const testimonials: Testimonial[] = [
+  {
+    id: "review-1",
+    quote:
+      "Sobrang worth it, kaya napaorder ulit ako. For safety din kasi at lagi nalang nawawalan ng ilaw. At least ito matagal malowbat — salamat!",
+    author: "Repeat Customer · Albay",
+    product: "Solar Ceiling Light",
+    highlight: "Long battery life",
+  },
+  {
+    id: "review-2",
+    quote:
+      "Satisfied ako sa product. It meets my expectations. Very affordable. Wala naman na damage. Super gamit na gamit namin kapag nagbabrownout.",
+    author: "Verified Buyer · Albay",
+    product: "300W Solar Flood Light (IP67)",
+    highlight: "Brownout ready",
+  },
+  {
+    id: "review-3",
+    quote:
+      "Very good investment! No problem na kung mawalan ng kuryente. Maliwanag, safe at maayos na dumating sakin ang item. Responsive din customer service. Satisfied customer!",
+    author: "Verified Buyer · Bicol",
+    product: "Solar Ceiling Light",
+    highlight: "Responsive service",
+  },
+  {
+    id: "review-4",
+    quote:
+      "Kailangan ko to dahil napapadalas ang brownout ngayon. Well packed at gumagana yung item. Recommend ko to sa mga kapitbahay ko.",
+    author: "Verified Buyer · Albay",
+    product: "1000W Solar Flood Light (IP68)",
+    highlight: "Well-packed",
+  },
+  {
+    id: "review-5",
+    quote:
+      "It's a good product, okay na okay — what you see is what you get. Walang damage ang packaging at mabilis lang din dumating. Ang liwanag niya.",
+    author: "Verified Buyer · Bicol",
+    product: "Indoor Solar Flood Light",
+    highlight: "Fast delivery",
+  },
+  {
+    id: "review-6",
+    quote:
+      "Tama desisyon ko bumili. Maganda ang item, secured at walang damage ang item. Will order again soon, thank you.",
+    author: "Verified Buyer · Bicol",
+    product: "Outdoor Solar Lights",
+    highlight: "Will order again",
+  },
+];
+
 export const orderSteps: { id: string; title: string; description: string; icon: IconName }[] = [
   {
     id: "message",

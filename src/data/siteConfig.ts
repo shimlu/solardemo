@@ -115,6 +115,12 @@ export const siteConfig = {
       eyebrow: "Why Choose Us",
       title: "Reliable light, rooted in Bicol",
     },
+    testimonials: {
+      eyebrow: "Customer Feedback",
+      title: "Trusted by Filipino homes across Bicol & nationwide",
+      subtitle:
+        "Real feedback from customers who rely on Solar EcoPrime every night — especially during brownouts.",
+    },
     steps: {
       eyebrow: "How to Order",
       title: "Working with us is simple",
