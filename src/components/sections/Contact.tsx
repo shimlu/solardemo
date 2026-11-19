@@ -76,6 +76,7 @@ export function Contact() {
                 <div key={b.name} className="rounded-2xl bg-accent-light p-4">
                   <p className="text-sm font-extrabold text-accent-dark">{b.name}</p>
                   <p className="mt-1 text-sm text-ink">{b.address}</p>
+                  <p className="mt-2 text-xs font-bold text-brand-dark">{b.phone}</p>
                 </div>
               ))}
             </div>

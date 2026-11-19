@@ -29,6 +29,7 @@ export const siteConfig = {
       name: "Tabaco City Branch (Main / Hub)",
       address: "Blk 11 Lot 1, M.E.S Matagbac, Tabaco City",
       label: "Blk 11 Lot 1, M.E.S Matagbac, Tabaco City, Albay, Philippines",
+      phone: "0948 146 5509",
       lat: 13.3484,
       lng: 123.70728,
       embedUrl: "https://maps.google.com/maps?q=13.3484,123.70728&z=17&output=embed",
@@ -37,8 +38,9 @@ export const siteConfig = {
     {
       id: "naga",
       name: "Naga City Branch",
-      address: "Padre Garcia St., Sitio Matiway, San Felipe, Naga City",
+      address: "Padre Garcia St., Sitio Matiway, San Felipe, Naga City (In front of Moraville Hotel San Felipe)",
       label: "San Felipe-Pacol-Carolina-Panicuason Road, Pacol, Naga, 4400, Philippines",
+      phone: "0963 202 5811 | 0956 243 2759",
       lat: 13.6461,
       lng: 123.212318,
       embedUrl: "https://maps.google.com/maps?q=13.6461,123.212318&z=17&output=embed",
@@ -62,6 +64,7 @@ export const siteConfig = {
   },
 
   nav: [
+    { label: "Benefits", href: "#benefits" },
     { label: "Products", href: "#products" },
     { label: "Solutions", href: "#solutions" },
     { label: "Why Us", href: "#why-us" },
@@ -91,6 +94,12 @@ export const siteConfig = {
   },
 
   sectionCopy: {
+    benefits: {
+      eyebrow: "Benefits of Solar Lights",
+      title: "Save on electricity and enjoy peace of mind every day",
+      subtitle:
+        "A practical, long-lasting investment for Filipino homes, businesses, and communities — built for everyday use and sudden brownouts.",
+    },
     products: {
       eyebrow: "Featured Products",
       title: "Solar lighting built for Philippine weather",

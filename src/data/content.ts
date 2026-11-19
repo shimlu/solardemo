@@ -8,6 +8,63 @@ export const trustStats: { id: string; value: string; label: string; icon: IconN
   { id: "delivery", value: "Nationwide", label: "Delivery Coverage", icon: "truck" },
 ];
 
+export const solarBenefits: {
+  id: string;
+  title: string;
+  tag: string;
+  description: string;
+  icon: IconName;
+}[] = [
+  {
+    id: "save-electricity",
+    title: "Save on Electricity",
+    tag: "Tipid sa Kuryente",
+    description: "100% solar-powered lighting — zero added cost to your monthly electric bill.",
+    icon: "zap",
+  },
+  {
+    id: "brownout-ready",
+    title: "Light During Brownouts & Typhoons",
+    tag: "Emergency Ready",
+    description: "Dependable backup lighting when power goes out — stays on when you need it most.",
+    icon: "lightbulb",
+  },
+  {
+    id: "auto-on-off",
+    title: "Automatic On / Off",
+    tag: "Dusk-to-Dawn Sensor",
+    description: "Automatically turns on at dusk and switches off at sunrise — no daily switching needed.",
+    icon: "power",
+  },
+  {
+    id: "no-wiring",
+    title: "No Wiring, No Hassle",
+    tag: "Easy Installation",
+    description: "Quick, clean setup with no wall drilling, trenching, or messy electrical cables.",
+    icon: "wrench",
+  },
+  {
+    id: "weather-resistant",
+    title: "Weather-Resistant (IP65)",
+    tag: "Rain & Heat Proof",
+    description: "Sealed dust-tight and water-resistant build engineered for Philippine rain and intense heat.",
+    icon: "cloudSun",
+  },
+  {
+    id: "peace-of-mind",
+    title: "Everyday Peace of Mind",
+    tag: "Practical Investment",
+    description: "A long-lasting, practical investment that keeps homes, businesses, and streets safely lit.",
+    icon: "heart",
+  },
+];
+
+export const solarGuarantees: { id: string; title: string; subtitle: string; icon: IconName }[] = [
+  { id: "warranty", title: "1-Year Warranty", subtitle: "Backed by our local team", icon: "shield" },
+  { id: "ip65", title: "IP65 Rated", subtitle: "Water-resistant & dust-tight", icon: "droplets" },
+  { id: "stores", title: "Physical Stores", subtitle: "Tabaco City & Naga City", icon: "store" },
+];
+
 export const whyUs: { id: string; title: string; description: string; icon: IconName }[] = [
   {
     id: "reliability",
@@ -62,7 +119,7 @@ export const faqs: { id: string; question: string; answer: string }[] = [
     id: "warranty",
     question: "Do your solar lights come with a warranty?",
     answer:
-      "Yes — our products come with a warranty. Coverage depends on the product, so message us with the item you're interested in and we'll confirm the exact terms.",
+      "Yes — our solar lights come with a 1-year warranty backed by our physical stores in Tabaco City and Naga City. Message us with the specific item and we'll share the exact coverage details.",
   },
   {
     id: "rain",

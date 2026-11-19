@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { TrustStrip } from "@/components/sections/TrustStrip";
+import { Benefits } from "@/components/sections/Benefits";
 import { Products } from "@/components/sections/Products";
 import { Solutions } from "@/components/sections/Solutions";
 import { WhyUs } from "@/components/sections/WhyUs";
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <TrustStrip />
+        <Benefits />
         <Products />
         <Solutions />
         <WhyUs />
