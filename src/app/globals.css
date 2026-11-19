@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Brand theme (RGB triplets) — tweak colors here ---------- */
+:root {
+  /* Primary: logo blue */
+  --brand: 31 95 168;
+  --brand-dark: 16 52 102;
+  --brand-light: 232 241 251;
+  /* Accent: logo orange (darkened for accessible text contrast) */
+  --accent: 201 95 10;
+  --accent-dark: 168 74 4;
+  --accent-light: 254 243 232;
+  /* Bright sun orange — decorative only */
+  --sun: 242 148 38;
+  /* Neutrals */
+  --ink: 15 30 55;
+  --muted: 82 96 117;
+  --surface: 247 249 252;
+  --line: 224 230 239;
+}
+
+@layer base {
+  /* Scale all rem-based sizing up on larger screens */
+  html {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) {
+    html { font-size: 17px; }
+  }
+  @media (min-width: 1024px) {
+    html { font-size: 18px; }
+  }
+  @media (min-width: 1536px) {
+    html { font-size: 20px; }
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+

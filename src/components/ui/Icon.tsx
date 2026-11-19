@@ -1,0 +1,68 @@
+import {
+  Award,
+  Building2,
+  CheckCircle2,
+  ChevronDown,
+  ClipboardList,
+  CloudSun,
+  Facebook,
+  Home,
+  Landmark,
+  Leaf,
+  Lightbulb,
+  Mail,
+  MapPin,
+  Menu,
+  MessageCircle,
+  Phone,
+  Send,
+  Shield,
+  Sun,
+  Truck,
+  Users,
+  X,
+  Zap,
+  type LucideIcon,
+} from "lucide-react";
+
+const icons = {
+  award: Award,
+  building: Building2,
+  check: CheckCircle2,
+  chevronDown: ChevronDown,
+  clipboard: ClipboardList,
+  cloudSun: CloudSun,
+  facebook: Facebook,
+  home: Home,
+  landmark: Landmark,
+  leaf: Leaf,
+  lightbulb: Lightbulb,
+  mail: Mail,
+  mapPin: MapPin,
+  menu: Menu,
+  messageCircle: MessageCircle,
+  phone: Phone,
+  send: Send,
+  shield: Shield,
+  sun: Sun,
+  truck: Truck,
+  users: Users,
+  x: X,
+  zap: Zap,
+} satisfies Record<string, LucideIcon>;
+
+export type IconName = keyof typeof icons;
+
+export function Icon({
+  name,
+  className,
+  size = 20,
+}: {
+  name: IconName;
+  className?: string;
+  size?: number;
+}) {
+  const Cmp = icons[name];
+  return <Cmp className={className} size={size} aria-hidden="true" />;
+}
+
