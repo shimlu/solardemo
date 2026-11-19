@@ -2,7 +2,7 @@ import type { IconName } from "@/components/ui/Icon";
 
 /** Trust strip. Values from the Facebook cover banner; verify before launch. */
 export const trustStats: { id: string; value: string; label: string; icon: IconName }[] = [
-  { id: "followers", value: "3.8K+", label: "Facebook Followers", icon: "users" },
+  { id: "followers", value: "11K+", label: "Trusted Followers", icon: "users" },
   { id: "eco", value: "100%", label: "Eco-friendly Products", icon: "leaf" },
   { id: "years", value: "5+", label: "Years of Service", icon: "award" },
   { id: "delivery", value: "Nationwide", label: "Delivery Coverage", icon: "truck" },

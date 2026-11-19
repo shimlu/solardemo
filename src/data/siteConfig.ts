@@ -25,24 +25,24 @@ export const siteConfig = {
 
   branches: [
     {
-      id: "naga",
-      name: "Naga City Branch (Main)",
-      address: "Padre Garcia St., Sitio Matiway, San Felipe, Naga City",
-      label: "San Felipe-Pacol-Carolina-Panicuason Road, Pacol, Naga, 4400, Philippines",
-      lat: 13.6461,
-      lng: 123.212318,
-      embedUrl: "https://maps.google.com/maps?q=13.6461,123.212318&z=17&output=embed",
-      directionsUrl: "https://www.google.com/maps/search/?api=1&query=13.6461,123.212318",
-    },
-    {
       id: "tabaco",
-      name: "Tabaco City Branch",
+      name: "Tabaco City Branch (Main / Hub)",
       address: "Blk 11 Lot 1, M.E.S Matagbac, Tabaco City",
       label: "Blk 11 Lot 1, M.E.S Matagbac, Tabaco City, Albay, Philippines",
       lat: 13.3484,
       lng: 123.70728,
       embedUrl: "https://maps.google.com/maps?q=13.3484,123.70728&z=17&output=embed",
       directionsUrl: "https://www.google.com/maps/search/?api=1&query=13.3484,123.70728",
+    },
+    {
+      id: "naga",
+      name: "Naga City Branch",
+      address: "Padre Garcia St., Sitio Matiway, San Felipe, Naga City",
+      label: "San Felipe-Pacol-Carolina-Panicuason Road, Pacol, Naga, 4400, Philippines",
+      lat: 13.6461,
+      lng: 123.212318,
+      embedUrl: "https://maps.google.com/maps?q=13.6461,123.212318&z=17&output=embed",
+      directionsUrl: "https://www.google.com/maps/search/?api=1&query=13.6461,123.212318",
     },
   ],
 

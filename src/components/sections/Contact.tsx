@@ -16,7 +16,7 @@ export function Contact() {
   const { contact, location, branches } = siteConfig;
   type Branch = (typeof branches)[number];
   const [sent, setSent] = useState(false);
-  const [selectedBranchId, setSelectedBranchId] = useState<string>("naga");
+  const [selectedBranchId, setSelectedBranchId] = useState<string>("tabaco");
 
   const activeBranch: Branch = branches.find((b: Branch) => b.id === selectedBranchId) ?? branches[0];
   const activeLabel = activeBranch.label;

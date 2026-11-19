@@ -81,7 +81,7 @@ export function Hero() {
             />
             <div className="grid grid-cols-3 divide-x divide-line border-t border-line bg-white text-center">
               {[
-                ["3.8K+", "Followers"],
+                ["11K+", "Followers"],
                 ["5+", "Years"],
                 ["100%", "Eco-friendly"],
               ].map(([v, l]) => (
