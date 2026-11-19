@@ -16,11 +16,11 @@ export const siteConfig = {
   birBadge: "/brand/bir-badge.jpg",
 
   location: {
-    city: "Naga City",
-    province: "Camarines Sur",
+    city: "Tabaco City",
+    province: "Albay",
     region: "Bicol Region, Philippines",
-    addressLine: "P. Garcia St., Matiway, San Felipe, Naga City, 4400",
-    mapQuery: "Padre Garcia St, San Felipe, Naga City, Camarines Sur",
+    addressLine: "Blk 11 Lot 1, M.E.S Matagbac, Tabaco City, Albay",
+    mapQuery: "Blk 11 Lot 1, M.E.S Matagbac, Tabaco City",
   },
 
   branches: [
